@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!--
+    /**
+    * Roman Yurkhanov
+    *
+    * Email :: ferrumdp@gmail.com
+    * Linkedin :: https://www.linkedin.com/in/roman-yurkhanov-322035122/
+    *
+    * Copyright 2023 Roman Yurkhanov. All rights reserved.
+    * See license.txt for license details.
+    */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+    <menu>
+        <add id="RomanYurkhanov_Checkout::configuration" title="Checkout" module="RomanYurkhanov_Checkout" sortOrder="20" resource="RomanYurkhanov_Checkout::configuration" parent="RomanYurkhanov_Base::menu"/>
+        <add id="RomanYurkhanov_Checkout::configuration_item" title="Configuration" module="RomanYurkhanov_Checkout" sortOrder="20" action="adminhtml/system_config/edit/section/romanyurkhanov_checkout" resource="RomanYurkhanov_Checkout::configuration_item" parent="RomanYurkhanov_Checkout::configuration"/>
+    </menu>
+</config>

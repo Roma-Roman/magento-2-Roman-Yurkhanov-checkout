@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<!--
+    /**
+    * Roman Yurkhanov
+    *
+    * Email :: ferrumdp@gmail.com
+    * Linkedin :: https://www.linkedin.com/in/roman-yurkhanov-322035122/
+    *
+    * Copyright 2023-present Roman Yurkhanov. All rights reserved.
+    * See license.txt for license details.
+    */
+-->
+<page xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" layout="checkout" xsi:noNamespaceSchemaLocation="urn:magento:framework:View/Layout/etc/page_configuration.xsd">
+    <body>
+        <referenceBlock name="checkout.root">
+            <arguments>
+                <argument name="jsLayout" xsi:type="array">
+                    <item name="components" xsi:type="array">
+                        <item name="checkout" xsi:type="array">
+                            <item name="children" xsi:type="array">
+                                <item name="sidebar" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="summary" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="itemsAfter" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="cmsBlock" xsi:type="array">
+                                                            <item name="component" xsi:type="string">RomanYurkhanov_Checkout/js/view/cms-block</item>
+                                                            <item name="sortOrder" xsi:type="string">100</item>
+                                                            <item name="displayArea" xsi:type="string">sidebar</item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+
+                                <item name="steps" xsi:type="array">
+                                    <item name="children" xsi:type="array">
+                                        <item name="shipping-step" xsi:type="array">
+                                            <item name="children" xsi:type="array">
+                                                <item name="shippingAddress" xsi:type="array">
+                                                    <item name="children" xsi:type="array">
+                                                        <item name="shipping-address-fieldset" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="shippingCountryNotice" xsi:type="array">
+                                                                    <item name="sortOrder" xsi:type="string">80</item>
+                                                                    <item name="component" xsi:type="string">
+                                                                        RomanYurkhanov_Checkout/js/view/shipping-country-notice
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+
+                                                        <item name="before-shipping-method-form" xsi:type="array">
+                                                            <item name="children" xsi:type="array">
+                                                                <item name="shippingProposal" xsi:type="array">
+                                                                    <item name="component" xsi:type="string">
+                                                                        RomanYurkhanov_Checkout/js/view/shipping-proposal
+                                                                    </item>
+                                                                </item>
+                                                            </item>
+                                                        </item>
+                                                    </item>
+                                                </item>
+                                            </item>
+                                        </item>
+                                    </item>
+                                </item>
+                            </item>
+                        </item>
+                    </item>
+                </argument>
+            </arguments>
+        </referenceBlock>
+    </body>
+</page>

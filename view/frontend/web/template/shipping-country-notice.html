@@ -1,0 +1,15 @@
+<!-- ko if: isEnabled() -->
+    <!-- ko if: countryId() -->
+        <div class="message success"><span data-bind="html: message()"></span></div>
+    <!-- /ko -->
+
+    <!-- ko ifnot: countryId() -->
+        <div class="message warning">
+            <span data-bind="html:
+            $t('Please choose %1 to get %2 method')
+            .replace('%1', countryName())
+            .replace('%2', methodTitle())
+            "></span>
+        </div>
+    <!-- /ko -->
+<!-- /ko -->

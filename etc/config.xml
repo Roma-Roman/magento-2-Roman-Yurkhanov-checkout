@@ -1,0 +1,38 @@
+<?xml version="1.0"?>
+<!--
+    /**
+    * Roman Yurkhanov
+    *
+    * Email :: ferrumdp@gmail.com
+    * Linkedin :: https://www.linkedin.com/in/roman-yurkhanov-322035122/
+    *
+    * Copyright 2023-present Roman Yurkhanov. All rights reserved.
+    * See license.txt for license details.
+    */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Store:etc/config.xsd">
+    <default>
+        <romanyurkhanov_checkout>
+            <cms_block>
+                <enabled>0</enabled>
+            </cms_block>
+            <preferred_payment_method>
+                <enabled>0</enabled>
+            </preferred_payment_method>
+            <preferred_shipping_method>
+                <enabled>0</enabled>
+            </preferred_shipping_method>
+            <shipping_country_notice>
+                <enabled>0</enabled>
+                <method_title><![CDATA[<strong>Free Shipping</strong>]]></method_title>
+                <message><![CDATA[Great! Now you can choose <strong>Free Shipping</strong> method!]]></message>
+                <country_id>GB</country_id>
+            </shipping_country_notice>
+            <shipping_proposal>
+                <enabled>0</enabled>
+                <guest>Please sign in to get :: some_shipping_proposal</guest>
+                <customer>Great! Now you can choose :: some_shipping_proposal</customer>
+            </shipping_proposal>
+        </romanyurkhanov_checkout>
+    </default>
+</config>

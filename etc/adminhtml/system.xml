@@ -1,0 +1,128 @@
+<?xml version="1.0"?>
+<!--
+    /**
+    * Roman Yurkhanov
+    *
+    * Email :: ferrumdp@gmail.com
+    * Linkedin :: https://www.linkedin.com/in/roman-yurkhanov-322035122/
+    *
+    * Copyright 2023-present Roman Yurkhanov. All rights reserved.
+    * See license.txt for license details.
+    */
+-->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Config:etc/system_file.xsd">
+    <system>
+        <section id="romanyurkhanov_checkout" translate="label" type="text" sortOrder="360" showInDefault="1" showInWebsite="1" showInStore="1">
+            <label>Checkout</label>
+            <tab>romanyurkhanov</tab>
+            <class>item-icon-tab checkout</class>
+            <resource>RomanYurkhanov_Checkout::configuration</resource>
+            <group id="cms_block" translate="label" type="text" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>CMS Block</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[
+                            Select <b>Yes</b> to enable this feature.<br />
+                            1. This feature allows you to add additional information, editable from the admin panel, to the checkout page.<br />
+                            2. Adds a CMS block to the "Order Summary" block at the bottom.<br />
+                        ]]>
+                    </comment>
+                </field>
+                <field id="cms_block_id" translate="label comment" type="select" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>CMS Block</label>
+                    <source_model>RomanYurkhanov\Checkout\Model\Config\Source\CmsBlock</source_model>
+                    <comment>
+                        <![CDATA[
+                            Select <b>CMS block</b> you want to display on the checkout page.<br />
+                        ]]>
+                    </comment>
+                </field>
+            </group>
+            <group id="preferred_payment_method" translate="label" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>Preferred Payment Method</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[
+                            Select <b>Yes</b> to enable this feature.<br />
+                            1. This feature allows you to save and preselect the last selected <b>payment method</b>  on the checkout page.<br />
+                        ]]>
+                    </comment>
+                </field>
+            </group>
+            <group id="preferred_shipping_method" translate="label" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>Preferred Shipping Method</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[
+                            Select <b>Yes</b> to enable this feature.<br />
+                            1. This feature allows you to save and preselect the last selected <b>shipping method</b>  on the checkout page.<br />
+                        ]]>
+                    </comment>
+                </field>
+            </group>
+            <group id="shipping_country_notice" translate="label" type="text" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>Shipping Country Notice</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[
+                            Select <b>Yes</b> to enable this feature.<br />
+                            1. This feature allows you to show additional information to the user on the checkout page depending on the selected country.<br />
+                            Example: <br />
+                            You can set the <strong>Free Shipping</strong> method for specific country in the: <br />
+                            Store -> Configuration -> Sales - > Delivery Methods <br />
+                            And then please select that county in the setting "Country" below.
+                        ]]>
+                    </comment>
+                </field>
+                <field id="method_title" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Shipping method title</label>
+                    <comment><![CDATA[Example: <br /><strong>Free Shipping</strong>]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="message" translate="label comment" type="textarea" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Notice message (success)</label>
+                    <comment><![CDATA[Example: <br /> Great! Now you can choose <strong>Free Shipping</strong> method!]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="country_id" translate="label comment" type="multiselect" sortOrder="40" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>County</label>
+                    <source_model>Magento\Directory\Model\Config\Source\Country</source_model>
+                    <comment><![CDATA[Please select the county.]]>
+                    </comment>
+                    <validate>required-entry</validate>
+                </field>
+            </group>
+            <group id="shipping_proposal" translate="label" type="text" sortOrder="50" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                <label>Shipping Proposal</label>
+                <field id="enabled" translate="label comment" type="select" sortOrder="10" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Enable</label>
+                    <source_model>Magento\Config\Model\Config\Source\Yesno</source_model>
+                    <comment>
+                        <![CDATA[
+                            Select <b>Yes</b> to enable this feature.<br />
+                            1. This feature allows you to show additional information to the user on the checkout page, depending on whether the user is a <b>guest</b> or <b>logged in</b>.<br />
+                        ]]>
+                    </comment>
+                </field>
+                <field id="guest" translate="label comment" type="text" sortOrder="20" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Message for guest</label>
+                    <comment><![CDATA[Example: <br /> Please sign in to get :: some_shipping_proposal]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+                <field id="customer" translate="label comment" type="text" sortOrder="30" showInDefault="1" showInWebsite="1" showInStore="1" canRestore="1">
+                    <label>Message for customer</label>
+                    <comment><![CDATA[Example: <br /> Great! Now you can choose :: some_shipping_proposal]]></comment>
+                    <validate>required-entry</validate>
+                </field>
+            </group>
+        </section>
+    </system>
+</config>

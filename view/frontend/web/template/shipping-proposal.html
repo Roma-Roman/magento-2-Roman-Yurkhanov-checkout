@@ -1,0 +1,9 @@
+<!-- ko if: isEnabled() -->
+    <!-- ko if: (isCustomerLoggedIn) -->
+        <div class="message success"><span data-bind="html: customer()"></span></div>
+    <!-- /ko -->
+
+    <!-- ko ifnot: (isCustomerLoggedIn) -->
+        <div class="message warning"><span data-bind="html: guest()"></span></div>
+    <!-- /ko -->
+<!-- /ko -->
