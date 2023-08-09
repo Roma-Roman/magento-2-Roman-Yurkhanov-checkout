@@ -14,7 +14,49 @@ RomanYurkhanov Checkout Extension for Magento 2
 4. Shipping Country Notice
 5. Shipping Proposal
 
-## Extension Screenshots
+## Features Details
+
+1. CMS Block
+- This feature allows you to add additional information, editable from the admin panel, to the checkout page.
+- Adds a CMS block to the "Order Summary" block at the bottom.
+
+2. Preferred Payment Method
+- This feature allows you to save and preselect the last selected payment method on the checkout page.
+
+3. Preferred Shipping Method
+- This feature allows you to save and preselect the last selected shipping method on the checkout page.
+
+4. Shipping Country Notice
+- This feature allows you to show additional information to the user on the checkout page depending on the selected country.
+Example:
+You can set the Free Shipping method for specific country in the:
+Store -> Configuration -> Sales - > Delivery Methods
+And then please select that county in the setting "Country".
+
+5. Shipping Proposal
+- This feature allows you to show additional information to the user on the checkout page, depending on whether the user is a guest or logged in.
+
+## Extension Screenshots and video-demo
+
+1. CMS Block
+<img width="1792" alt="Screenshot 2023-08-09 at 09 15 32" src="https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-checkout/assets/14273213/671a1623-89a3-494b-b2ad-4d8c23770130">
+<img width="1792" alt="Screenshot 2023-08-09 at 09 17 51" src="https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-checkout/assets/14273213/8b32e150-c878-4dd8-925f-2550e6ad867c">
+
+
+2. Preferred Payment Method
+<img width="1792" alt="Screenshot 2023-08-09 at 09 22 52" src="https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-checkout/assets/14273213/c07e86a3-59bd-4a51-9d7c-d291148486e9">
+
+https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-checkout/assets/14273213/6bcdb9fd-d032-4e86-8256-3579ee711e39
+
+
+3. Preferred Shipping Method
+<img width="1792" alt="Screenshot 2023-08-09 at 09 52 06" src="https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-checkout/assets/14273213/1324970a-ff9f-4a6f-ad33-9e64615e6456">
+
+https://github.com/Roma-Roman/magento-2-Roman-Yurkhanov-checkout/assets/14273213/f0c2762b-9337-45e6-a5d8-51c2ed89fe09
+
+
+4. Shipping Country Notice
+5. Shipping Proposal
 
 ## How to install & upgrade RomanYurkhanov_Checkout
 
