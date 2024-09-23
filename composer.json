@@ -1,11 +1,11 @@
 {
   "name": "romanyurkhanov/module-checkout",
   "description": "RomanYurkhanov Checkout module for Magento 2.",
-    "require": {
-        "romanyurkhanov/module-base": "^1.0.0"
-    },
+  "require": {
+    "romanyurkhanov/module-base": "^1.0.1"
+  },
   "type": "magento2-module",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "license": [
     "proprietary"
   ],
@@ -14,7 +14,7 @@
       "name": "Roman Yurkhanov",
       "email": "ferrumdp@gmail.com",
       "homepage": "https://www.linkedin.com/in/roman-yurkhanov-322035122/",
-      "role": "Technical Support"
+      "role": "Author"
     }
   ],
   "autoload": {
